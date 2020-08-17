@@ -20,6 +20,10 @@ const options = {
       from: process.env.EMAIL_FROM,
     }),
   ],
+  session: {
+    jwt: true,
+    maxAge: 30 * 24 * 60 * 60,
+  },
   database: process.env.DATABASE_URL,
 }
 
