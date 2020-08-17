@@ -4,6 +4,10 @@ import Providers from 'next-auth/providers'
 const options = {
   site: process.env.NEXTAUTH_URL,
   providers: [
+    Providers.GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
     Providers.Email({
       server: {
         port: 465,
