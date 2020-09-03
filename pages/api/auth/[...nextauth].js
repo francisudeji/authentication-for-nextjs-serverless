@@ -42,6 +42,17 @@ const options = {
     maxAge: 30 * 24 * 60 * 60,
   },
   database: process.env.DATABASE_URL,
+  pages: {
+    signIn: '/signin',
+  },
+  callbacks: {
+    redirect: async (url) => {
+      if (url === '/signin') {
+        return Promise.resolve('/profile')
+      }
+      return Promise.resolve('/signin')
+    },
+  },
 }
 
 export default (req, res) => NextAuth(req, res, options)

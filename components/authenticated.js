@@ -1,3 +1,9 @@
+import { signOut } from 'next-auth/client'
 export default function Authenticated({ user }) {
-  return <p>You are authenticated {user.email}</p>
+  return (
+    <div>
+      <p>You are authenticated {user.email}</p>
+      <button onClick={signOut}>Sign Out</button>
+    </div>
+  )
 }
