@@ -1,7 +1,11 @@
 import { signIn, signOut, useSession } from 'next-auth/client'
 
 export default function Page() {
-  const [session] = useSession()
+  const [session, loading] = useSession()
+
+  if (loading) {
+    return <p>Loading...</p>
+  }
 
   return (
     <>

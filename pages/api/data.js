@@ -5,7 +5,6 @@ export default async (req, res) => {
 
   if (session) {
     res.status(200).json({
-      session,
       message: 'You can access this content because you are signed in.',
     })
   } else {
