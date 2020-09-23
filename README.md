@@ -1,8 +1,40 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Authentication for Next.js and Serverless
 
-First, run the development server:
+This is the codebase to an article published on LogRocket and assumes you want to try out the sample application from the article.
+
+## What you'll need
+
+- MongoDB setup on your machine with a new databse called `nexauth`
+- A new app with a Client ID and Client Secret from [Google's Developer Console](https://console.developers.google.com/)
+- A Gmail account with all the right privileges
+
+## How to install
+
+- Clone this repository by running: `git clone git@github.com:francisudeji/authentication-for-nextjs-serverless.git` in your terminal of choice.
+- `cd` into `authentication-for-nextjs-serverless`
+- Install dependencies by running:
+
+```bash
+npm install
+# or
+yarn
+```
+
+- Replace the following environment variables with your credentials:
+
+```bash
+EMAIL_FROM=
+EMAIL_USERNAME=
+EMAIL_PASSWORD=
+GOOGLE_ID=
+GOOGLE_SECRET=
+```
+
+## How to run
+
+- In your terminal, run:
 
 ```bash
 npm run dev
@@ -10,21 +42,6 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open your browser on http://localhost:3000
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Happy Coding**
