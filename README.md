@@ -6,7 +6,7 @@ This is the codebase to an article published on LogRocket and assumes you want t
 
 ## What you'll need
 
-- MongoDB setup on your machine with a new databse called `nexauth`
+- MongoDB setup on your machine with a new database called `nextauth`
 - A new app with a Client ID and Client Secret from [Google's Developer Console](https://console.developers.google.com/)
 - A Gmail account with all the right privileges
 
